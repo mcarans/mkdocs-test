@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hdx-utilities"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = []
+
+[dependency-groups]
+dev = ["mkapi", "mkdocs-material"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hdx"]
